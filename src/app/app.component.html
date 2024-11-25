@@ -1,7 +1,18 @@
-<nav>
-  <a routerLink="/">Home</a>
-  <a routerLink="/about">Sobre</a>
-  <a routerLink="/contact">Contato</a>
-</nav>
+<mat-toolbar>
+  <span>My App</span>
+  <span class="example-spacer"></span>
+  <mat-tab-group headerPosition="below" [(selectedIndex)]="selectedIndex" (selectedTabChange)="onTabChange($event)">
+    <mat-tab label="Home"></mat-tab>
+    <mat-tab label="About" ></mat-tab>
+    <mat-tab label="Forms" ></mat-tab>
+  </mat-tab-group>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
 
 <router-outlet></router-outlet>
