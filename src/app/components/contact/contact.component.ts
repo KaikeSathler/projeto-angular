@@ -4,6 +4,8 @@ import { FormControl, FormsModule, ReactiveFormsModule, Validators } from '@angu
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 import { merge } from 'rxjs';
 
@@ -11,7 +13,7 @@ import { merge } from 'rxjs';
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
-  imports: [MatFormFieldModule, MatInputModule, MatIconModule, FormsModule, ReactiveFormsModule, CommonModule], // Adicione MatIconModule aqui
+  imports: [MatFormFieldModule, MatButtonModule, MatDividerModule, MatInputModule, MatIconModule, FormsModule, ReactiveFormsModule, CommonModule], // Adicione MatIconModule aqui
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
 })
